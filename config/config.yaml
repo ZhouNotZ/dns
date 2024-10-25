@@ -1,0 +1,26 @@
+server_port: 5400
+
+# 国内 DNS 服务器列表
+domestic_dns:
+  - "114.114.114.114"
+  - "223.5.5.5"
+
+# 国外 DNS 服务器列表
+foreign_dns:
+  - "8.8.8.8"
+  - "1.1.1.1"
+
+# 黑名单域名列表
+blacklist:
+  - "111.com"
+  - "222.com"
+
+# 按照 DNS 服务器分组域名，支持通配符
+domain_specific_dns:
+  "223.5.5.5":
+    - "baidu.com"
+
+# 自定义域名到 IP 的映射
+custom_domain_ip:
+  "test.local": "123.123.123.123"
+  "test2.local": "123.234.567.789"
